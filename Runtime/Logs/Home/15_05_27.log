@@ -1,0 +1,838 @@
+[ 2015-05-27T22:50:07+08:00 ] 123.125.71.51 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001702s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432738207 AND ( deadline = 0 OR deadline > 1432738207 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000691s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008854s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432738207 AND ( deadline = 0 OR deadline > 1432738207 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001470s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006531s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.003454s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001643s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2015-05-27T23:03:54+08:00 ] 220.181.108.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432739034 AND ( deadline = 0 OR deadline > 1432739034 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000623s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432739034 AND ( deadline = 0 OR deadline > 1432739034 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013650s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001310s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005359s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002903s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002939s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001482s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-05-27T23:05:24+08:00 ] 66.249.64.190 /index.php?s=/Home/Article/index/category/emation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `name` = 'emation' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000942s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010950s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('41','43','42') AND `create_time` < 1432739124 AND ( deadline = 0 OR deadline > 1432739124 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0009s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002349s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.007957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010199s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.004735s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.004800s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002629s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.007957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-05-27T23:06:30+08:00 ] 207.46.13.139 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432739190 AND ( deadline = 0 OR deadline > 1432739190 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000620s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007754s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432739190 AND ( deadline = 0 OR deadline > 1432739190 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001210s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005267s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002824s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001356s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-05-27T23:06:30+08:00 ] 207.46.13.139 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432739190 AND ( deadline = 0 OR deadline > 1432739190 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000812s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432739190 AND ( deadline = 0 OR deadline > 1432739190 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001211s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005693s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002962s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001386s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-05-27T23:20:33+08:00 ] 198.204.226.202 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001515s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432740033 AND ( deadline = 0 OR deadline > 1432740033 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000625s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432740033 AND ( deadline = 0 OR deadline > 1432740033 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001460s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006471s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.003347s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001637s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-05-27T23:22:47+08:00 ] 123.125.71.95 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001738s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432740167 AND ( deadline = 0 OR deadline > 1432740167 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000654s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432740167 AND ( deadline = 0 OR deadline > 1432740167 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013710s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001304s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005438s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002900s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002948s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001466s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-05-27T23:23:27+08:00 ] 220.181.108.169 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001427s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432740207 AND ( deadline = 0 OR deadline > 1432740207 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000689s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432740207 AND ( deadline = 0 OR deadline > 1432740207 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0007s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001300s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005812s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.003244s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001514s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-05-27T23:41:18+08:00 ] 220.181.108.114 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432741278 AND ( deadline = 0 OR deadline > 1432741278 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000624s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007885s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432741278 AND ( deadline = 0 OR deadline > 1432741278 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001167s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005166s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002747s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001314s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-05-27T23:47:36+08:00 ] 46.229.164.99 /home.php?ac=pm&daterange=2&handlekey=showmsg_24&mod=spacecp&op=showmsg&pid=1434&pmid=0&tid=1174&touid=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0041s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432741656 AND ( deadline = 0 OR deadline > 1432741656 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000721s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432741656 AND ( deadline = 0 OR deadline > 1432741656 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001252s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005700s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.003038s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001406s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2015-05-27T23:50:22+08:00 ] 202.107.203.226 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432741822 AND ( deadline = 0 OR deadline > 1432741822 ) ORDER BY `id` DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000646s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432741822 AND ( deadline = 0 OR deadline > 1432741822 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0007s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001422s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005807s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.003250s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.003286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001579s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-05-27T23:51:31+08:00 ] 172.246.220.13 http://www.google.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432741891 AND ( deadline = 0 OR deadline > 1432741891 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000676s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432741891 AND ( deadline = 0 OR deadline > 1432741891 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013971s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001243s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005220s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002772s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002807s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001415s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2015-05-27T23:56:47+08:00 ] 220.181.108.94 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1432742207 AND ( deadline = 0 OR deadline > 1432742207 ) ORDER BY `id` DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000660s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432742207 AND ( deadline = 0 OR deadline > 1432742207 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0007s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014968s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001318s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005702s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002952s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002987s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001471s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-05-27T23:56:54+08:00 ] 66.249.64.185 /index.php?s=/Home/Article/index/category/blog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `feng_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `feng_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `name` = 'blog' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ pageHeader ] --START--
+INFO: Run Addons\AdaptiveImages\AdaptiveImagesAddon [ RunTime:0.000634s ]
+INFO: [ pageHeader ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `feng_channel` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `feng_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007740s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `feng_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `feng_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1432742214 AND ( deadline = 0 OR deadline > 1432742214 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ pageFooter ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0005s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'ReturnTop' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001227s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007146s ]
+INFO: Run Addons\ReturnTop\ReturnTopAddon [ RunTime:0.002732s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002771s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001378s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+

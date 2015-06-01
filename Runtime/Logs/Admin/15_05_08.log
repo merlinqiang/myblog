@@ -1,0 +1,670 @@
+[ 2015-05-08T00:22:51+08:00 ] 101.226.65.106 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-05-08T00:22:51+08:00 ] 101.226.65.106 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-05-08T00:22:53+08:00 ] 113.108.80.160 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-05-08T00:23:01+08:00 ] 113.108.80.160 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-05-08T00:23:21+08:00 ] 114.113.124.3 /admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001583s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+
+[ 2015-05-08T00:23:21+08:00 ] 114.113.124.3 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2015-05-08T00:23:22+08:00 ] 114.113.124.3 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-05-08T00:23:38+08:00 ] 114.113.124.3 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Undefined index: lite /alidata/www/merlin_blog/myblog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `feng_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `feng_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `feng_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','1920039939','member','1','1431015818','merlin在2015-05-08 00:23登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /alidata/www/merlin_blog/myblog/Application/Common/Common/function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /alidata/www/merlin_blog/myblog/Application/Common/Common/function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1430929418 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: UPDATE `feng_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0002s ]
+SQL: UPDATE `feng_member` SET `login`=`login`+1,`last_login_time`='1431015818',`last_login_ip`='1920039939' WHERE `uid` = 1 [ RunTime:0.0002s ]
+
+[ 2015-05-08T00:23:39+08:00 ] 114.113.124.3 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_member` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_action_log` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_action_log` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_document` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_category` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_model` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010913s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.010044s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.167772s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002722s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.154653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.157251s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.157277s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.171037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001635s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.158383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.159868s ]
+INFO: Run Addons\QiuBai\QiuBaiAddon [ RunTime:0.002591s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.169988s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001794s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.158383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.160022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-05-08T00:23:40+08:00 ] 114.113.124.3 /admin.php?s=/Addons/execute/_addons/QiuBai/_controller/QiuBai/_action/getList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001506s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`name` FROM `feng_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Addons/execute%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 43 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-05-08T00:23:41+08:00 ] 114.113.124.3 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `extend_id` FROM feng_auth_group_access g INNER JOIN feng_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `feng_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `feng_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `feng_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_attribute` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `feng_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /alidata/www/merlin_blog/myblog/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-05-08T00:23:46+08:00 ] 114.113.124.3 /admin.php?s=/Article/index/cate_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `extend_id` FROM feng_auth_group_access g INNER JOIN feng_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `feng_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`pid` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_category` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `feng_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `category_id` = 42 AND `pid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `category_id` = 42 AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `feng_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_attribute` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `feng_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2015-05-08T07:59:29+08:00 ] 114.113.124.3 /admin.php?s=/Article/index/cate_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `extend_id` FROM feng_auth_group_access g INNER JOIN feng_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `feng_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`pid` FROM `feng_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `feng_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `category_id` = 42 AND `pid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `category_id` = 42 AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `feng_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_attribute` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `feng_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2015-05-08T17:23:22+08:00 ] 219.148.158.41 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-05-08T17:23:23+08:00 ] 219.148.158.41 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2015-05-08T17:23:23+08:00 ] 219.148.158.41 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-05-08T17:23:37+08:00 ] 219.148.158.41 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: lite /alidata/www/merlin_blog/myblog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `feng_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `feng_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `feng_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','-611017175','member','1','1431077017','merlin在2015-05-08 17:23登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /alidata/www/merlin_blog/myblog/Application/Common/Common/function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /alidata/www/merlin_blog/myblog/Application/Common/Common/function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1430990617 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `feng_member` SET `login`=`login`+1,`last_login_time`='1431077017',`last_login_ip`='3683950121' WHERE `uid` = 1 [ RunTime:0.0002s ]
+
+[ 2015-05-08T17:23:37+08:00 ] 219.148.158.41 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action_log` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_action_log` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_document` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_category` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_model` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.009730s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.117880s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002930s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.105058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.107876s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.107897s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.121239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001666s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.109025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.110542s ]
+INFO: Run Addons\QiuBai\QiuBaiAddon [ RunTime:0.002640s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.120348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001822s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.109025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.110708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-05-08T17:23:38+08:00 ] 219.148.158.41 /admin.php?s=/Addons/execute/_addons/QiuBai/_controller/QiuBai/_action/getList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001312s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`name` FROM `feng_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Addons/execute%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 43 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-05-08T17:23:45+08:00 ] 219.148.158.41 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001244s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `extend_id` FROM feng_auth_group_access g INNER JOIN feng_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `feng_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `feng_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `feng_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_attribute` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `feng_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /alidata/www/merlin_blog/myblog/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2015-05-08T17:23:48+08:00 ] 219.148.158.41 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001324s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0007s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_member` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_action_log` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_action_log` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_document` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_category` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `feng_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.010341s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.064438s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002818s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.051089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.053766s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.053788s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.067739s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001634s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.054896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.056368s ]
+INFO: Run Addons\QiuBai\QiuBaiAddon [ RunTime:0.002587s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.066800s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001826s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.054896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.056598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2015-05-08T17:23:49+08:00 ] 219.148.158.41 /admin.php?s=/Addons/execute/_addons/QiuBai/_controller/QiuBai/_action/getList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`name` FROM `feng_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Addons/execute%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 43 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `feng_addons` [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `feng_addons` WHERE `name` = 'QiuBai' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-05-08T17:23:50+08:00 ] 219.148.158.41 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `feng_menu` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`url` FROM `feng_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `feng_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `feng_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `feng_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `feng_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `feng_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `extend_id` FROM feng_auth_group_access g INNER JOIN feng_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `feng_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `feng_model` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `feng_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_document` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM feng_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `feng_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `feng_attribute` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `feng_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /alidata/www/merlin_blog/myblog/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
